@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background: url(/images/fud.png);
+    background-size: cover;
+    font-family: poppins, sans-serif;
+}
+
+$fontweight: (
+    "regular" : 400,
+    "medium" : 600,
+    "bold" : 800
+);
+
+//colors
+
+$txt-color: #fff;
+$txt-color2: #22DBF8;
+$bg-color: #101010c4;
+$btn-color:  #020101;
+
+
