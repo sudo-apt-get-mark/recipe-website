@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-image: url(/images/fud.png);
+  background-size: cover;
+  background-position: fixed;
+}
+body .container {
+  width: 90%;
+  margin: auto;
+  margin-top: 4rem;
+  background-color: rgba(16, 16, 16, 0.768627451);
+  -webkit-backdrop-filter: blur(0.8rem);
+          backdrop-filter: blur(0.8rem);
+}
+body .meal-wrapper .meal-search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+body .meal-wrapper .meal-search img {
+  margin-top: 3rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  align-items: center;
+}
+body .meal-wrapper .meal-search .meal-search-box {
+  margin-top: 5rem;
+}
+body .meal-wrapper .meal-search .meal-search-box input {
+  width: 80rem;
+  height: 4rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 2rem;
+  border-radius: 36px;
+  border: thin solid #808080;
+  background: rgba(19, 19, 19, 0.831372549);
+  background-blend-mode: normal;
+  -webkit-backdrop-filter: blur(0.4rem);
+          backdrop-filter: blur(0.4rem);
+  outline: none;
+  color: #fff;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .meal-wrapper .meal-search .meal-search-box input:focus {
+  background: #070707;
+  box-shadow: 0 0.3rem 0.5rem #101010;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .meal-wrapper .meal-search .meal-search-box input::-moz-placeholder {
+  font-style: italic;
+}
+body .meal-wrapper .meal-search .meal-search-box input::placeholder {
+  font-style: italic;
+}
+body .meal-wrapper .meal-search .meal-search-box button {
+  border: none;
+  border-radius: 3rem;
+  background: #f44336;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  width: 20rem;
+  height: 4rem;
+  cursor: pointer;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .meal-wrapper .meal-search .meal-search-box button:hover {
+  background: rgba(244, 67, 54, 0.8588235294);
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .meal-wrapper .meal-search .meal-search-box button .search-btn {
+  width: 100%;
+}
+body .meal-wrapper .meal-result {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+body .meal-wrapper .meal-result h4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+body .meal-wrapper .meal-result #meal {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body .meal-wrapper .meal-result #meal .meal-item {
+  border: none;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.379);
+  padding: 1rem;
+  margin: 2rem;
+}
+body .meal-wrapper .meal-result #meal .meal-item .meal-img {
+  width: 100%;
+}
+body .meal-wrapper .meal-result #meal .meal-item .meal-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+}
+body .meal-wrapper .meal-result #meal .meal-item .meal-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .meal-wrapper .meal-result #meal .meal-item .meal-name h5 {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 2rem;
+  color: #fff;
+}
+body .meal-wrapper .meal-result #meal .meal-item .meal-name a {
+  text-decoration: none;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  background: rgba(16, 16, 16, 0.8117647059);
+  -webkit-backdrop-filter: blur(0.2rem);
+          backdrop-filter: blur(0.2rem);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #fff;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .meal-wrapper .meal-result #meal .meal-item .meal-name a:hover {
+  background: #070707;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body .notfound {
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */

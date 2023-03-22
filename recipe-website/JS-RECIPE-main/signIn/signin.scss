@@ -1,0 +1,75 @@
+@import './signinresets';
+
+body {
+
+    form {
+        width: 45rem;
+        height: 50rem;
+        margin: auto;
+        background: $bg-color;
+        backdrop-filter: blur(1rem);
+        margin-top: 3rem;
+        border-radius: 1rem;
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 3rem;
+            font-weight: map-get($fontweight, bold );
+            color: $txt-color;
+            padding-top: 4.5rem;
+            padding-bottom: 3rem;
+        }
+
+        input {
+            margin: 3rem;
+            outline: none;
+            border: thin solid #f8f4f4;
+            border-radius: 2rem;
+            width: 80%;
+            height: 3rem;
+            padding: 2rem;
+            font-size: 1.6rem;
+            font-weight: map-get($fontweight, regular );
+            background: #232323;
+            color: $txt-color;
+            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+            &::placeholder {
+                color: #ffffff78;
+                text-transform: capitalize;
+            }
+
+            &:focus {
+                background: #020101;
+                backdrop-filter: blur(1rem);
+                transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+           
+        }
+
+        button {
+            padding: 1rem 3.5rem;
+            margin: 3rem;
+            border-radius: 3rem;
+            border: thin solid #ffffff;
+            background: #020101;
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: map-get($fontweight, medium );
+            cursor: pointer;
+            text-transform: capitalize;
+            transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+            &:hover {
+                box-shadow: 0rem .2rem .5rem  #22dcf878;
+                color: $txt-color2;
+                border: thin solid $txt-color2;
+                transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+        }
+    }
+
+
+
+}
