@@ -1,3 +1,17 @@
+<?php
+include("auth/security.php");
+include("auth/databaseconnect.php");
+require('auth/action.php');
+
+$fetchUserData = mysqli_query($connect, "SELECT *FROM home_users WHERE email='".$_SESSION['loggedInUser']."'");
+$row = mysqli_fetch_assoc($fetchUserData);
+$user_fname = trim($row['fname']);
+$user_lname = trim($row['lname']);
+$user_username = trim($row['username']);
+$user_email = trim($row['email']);
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +38,8 @@
 
 
 			<div class="meal-result">
-				<h4 class="title">Your search Results:</h4>
+                <!--Echo username of logged in user-->
+				<h4 class="title">Search results for: </h4>
 				<div id="meal">
 
 					

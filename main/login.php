@@ -19,6 +19,7 @@ include("includes/header.php");
 
       <div style="text-align: center;" class="text-danger">
       <?php
+      echo $_GET['reason'];
       if(isset($_SESSION['status'])){
         echo $_SESSION['status'];
         unset($_SESSION['status']);

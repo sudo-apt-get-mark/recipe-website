@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("dbconnect.php");
+include("databaseconnect.php");
 
 // if(isset($_POST['logoutBtn'])){
 // 	session_start();
