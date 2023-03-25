@@ -1,6 +1,6 @@
-<?php 
+<?php
 include("auth/security.php");
-include("auth/dbconnect.php");
+include("auth/databaseconnect.php");
 require('auth/action.php');
 
 $fetchUserData = mysqli_query($connect, "SELECT *FROM home_users WHERE email='".$_SESSION['loggedInUser']."'");
@@ -38,7 +38,8 @@ $user_email = trim($row['email']);
 
 
 			<div class="meal-result">
-				<h4 class="title">search results for: <code style="color: red;"><?php echo $user_username?></code></h4>
+                <!--Echo username of logged in user-->
+				<h4 class="title">Search results for: </h4>
 				<div id="meal">
 
 					

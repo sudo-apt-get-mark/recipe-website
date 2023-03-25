@@ -1,12 +1,9 @@
 # recipe website
- a recipe finder website
-
-#Installation
-
+# Installation
 <ol>
-    <li>Git clone the project</li>
-    <li>Create a database called home</li>
-    <li>Import the home.sql database file located in the root folder</li>
-    <li>Copy the project in the htdocs folder in xampp</li>
-    <li>Open the project by typing http://localhost/recipe-website/recipe-website/main/index.php</li>
+<li>Git clone the website</li>
+<li>Copy the folder to xampp/htdocs folder</li>
+<li>Create a database called home</li>
+<li>Import the home.sql database file provided</li>
+<li>Launch the website by firing up http://localhost/recipe-website/main/index.php</li>
 </ol>
